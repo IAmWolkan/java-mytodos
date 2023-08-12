@@ -34,12 +34,17 @@ public class TaskService {
     List<Task> tasks = getAllTasks();
 
     for (Task task : tasks) {
-      if(task.getId() == id)
+      if(task.getId() != id)
         continue;
 
       return task;
     }
 
     return null;
+  }
+
+  public Boolean removeTask(Task task) {
+    Persistance persistance = PersistanceFactory.create();
+    return persistance.remove(task);
   }
 }

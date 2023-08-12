@@ -14,9 +14,10 @@ public class ListTasks {
    */
   public void execute() {
     TaskService taskService = new TaskService();
-    List<Task> tasks = taskService.getAllTasks();
-
+    
     while(true) {
+      List<Task> tasks = taskService.getAllTasks();
+      
       for (Task task : tasks) {
         System.out.println(task.getId() + ". " + task.getName());
       }
@@ -40,10 +41,8 @@ public class ListTasks {
         continue;
       }
 
-      System.out.println("------------------------------------------\n");
-      System.out.println("Name: "+task.getName());
-      System.out.println("Content: "+task.getContent());
-      System.out.println("------------------------------------------\n");
+      ShowTask showTask = new ShowTask();
+      showTask.execute(task);
     }
   }
 }
