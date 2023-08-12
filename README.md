@@ -1,18 +1,8 @@
-## Getting Started
+## MyTodo's project
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+MyTodo's is my first Java project that I build to refresh my Java knowledge.
+It is build without any framework on purpose so that I could get a better
+understanding on what is happening under the hood.
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+This project has it's flaws and many improvements can be done, this is a small
+and quick project I build only to get a start in Java.
