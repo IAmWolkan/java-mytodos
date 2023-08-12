@@ -1,31 +1,15 @@
 package com.mytodos;
 
-import com.mytodos.Commands.Display.Input;
-import com.mytodos.Commands.Display.PrintMenu;
-import com.mytodos.Commands.Tasks.AddTask;
-import com.mytodos.Commands.Tasks.ListTasks;
+import com.mytodos.Commands.MainMeny;
+import com.mytodos.Display.Input;
 
 class App {
   public static void main(String[] args) {
-    while (true) {
-      PrintMenu printMenu = new PrintMenu();
-      printMenu.execute();
+    MainMeny mainMeny = new MainMeny();
 
-      String input = Input.askQuestion("");
-      
-      if(input.equalsIgnoreCase("a")) {
-        AddTask command = new AddTask();
-        command.execute();
-      }
-
-      if(input.equalsIgnoreCase("s")) {
-        ListTasks listTasks = new ListTasks();
-        listTasks.execute();
-      }
-
-      if(input.equalsIgnoreCase("x")) {
-        break;
-      }
+    Boolean keepRunning = true;
+    while (keepRunning) {
+      keepRunning = mainMeny.execute(); 
     }
 
     Input.destroy();

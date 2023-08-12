@@ -1,6 +1,6 @@
 package com.mytodos.Commands.Tasks;
 
-import com.mytodos.Commands.Display.Input;
+import com.mytodos.Display.Input;
 import com.mytodos.Entites.Task;
 import com.mytodos.Factories.PersistanceFactory;
 import com.mytodos.Persistance.Persistance;

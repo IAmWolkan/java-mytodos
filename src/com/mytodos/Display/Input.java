@@ -1,4 +1,4 @@
-package com.mytodos.Commands.Display;
+package com.mytodos.Display;
 
 import java.util.Scanner;
 
@@ -11,9 +11,12 @@ public class Input {
    * @return String
    */
   public static String askQuestion(String question) {
-    init();
     System.out.print(question);
+    return readAnswear();
+  }
 
+  public static String readAnswear() {
+    init();
     String answear = scanner.nextLine();
     return answear;
   }

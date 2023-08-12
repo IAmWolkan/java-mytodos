@@ -2,7 +2,7 @@ package com.mytodos.Commands.Tasks;
 
 import java.util.List;
 
-import com.mytodos.Commands.Display.Input;
+import com.mytodos.Display.Input;
 import com.mytodos.Entites.Task;
 import com.mytodos.Services.TaskService;
 
