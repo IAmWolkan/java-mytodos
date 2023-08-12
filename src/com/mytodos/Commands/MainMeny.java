@@ -2,7 +2,6 @@ package com.mytodos.Commands;
 
 import com.mytodos.Commands.Tasks.AddTask;
 import com.mytodos.Commands.Tasks.ListTasks;
-import com.mytodos.Display.Input;
 import com.mytodos.Display.MenuBuilder;
 
 public class MainMeny {
