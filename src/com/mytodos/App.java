@@ -18,7 +18,7 @@ class App {
         command.execute();
       }
 
-      if(input.equalsIgnoreCase("l")) {
+      if(input.equalsIgnoreCase("s")) {
         ListTasks listTasks = new ListTasks();
         listTasks.execute();
       }
